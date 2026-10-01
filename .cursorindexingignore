@@ -1,0 +1,14 @@
+# BEGIN cursor-governance
+node_modules/
+dist/
+build/
+coverage/
+.next/
+.cache/
+tmp/
+logs/
+*.log
+.venv/
+venv/
+__pycache__/
+# END cursor-governance

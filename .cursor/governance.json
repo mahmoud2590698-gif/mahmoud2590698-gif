@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "governance_version": "1.0.0",
+  "enabled": true,
+  "default_branch": "auto",
+  "workflow": "standard",
+  "diff_limit_added_lines": 300,
+  "diff_limit_enforcement": "hard",
+  "source_of_truth": "origin_default_branch",
+  "require_fetch_before_substantial_work": true,
+  "fetch_ttl_seconds": 15,
+  "check_duplicate_implementation": true,
+  "check_existing_pr": true,
+  "block_push_when_behind_main": true,
+  "block_unresolved_conflicts": true,
+  "block_push_to_default_branch": true,
+  "require_tests_before_recording": true,
+  "allow_migrations_only_when_required": true,
+  "token_efficiency": true,
+  "generated_globs": "package-lock.json pnpm-lock.yaml yarn.lock composer.lock Cargo.lock *.min.js *.min.css *.map",
+  "test_commands": "",
+  "build_commands": ""
+}

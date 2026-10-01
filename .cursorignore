@@ -1,0 +1,10 @@
+# BEGIN cursor-governance
+node_modules/
+.venv/
+venv/
+__pycache__/
+.cache/
+*.log
+logs/
+coverage/
+# END cursor-governance

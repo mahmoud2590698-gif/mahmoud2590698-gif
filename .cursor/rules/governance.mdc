@@ -1,0 +1,20 @@
+---
+description: Repository preflight, remote default branch, reuse-first work, token limits
+alwaysApply: true
+---
+
+# Repository Agent Contract
+
+Before substantial work, run `scripts/preflight.sh` and stop on `PREFLIGHT_BLOCK`.
+
+- The remote default branch is the source of truth. Discover it; do not assume `main`.
+- Search before creating. Order: reuse, extend, refactor, then create.
+- Respect `.cursor/governance.json`. Do not bypass hooks.
+- Keep one workstream on the current branch. No unrelated refactors.
+- No migration, recording, or deployment demo unless the change requires it and the user asked.
+- Read targeted ranges. Use search and `git diff` before opening large files.
+- Do not load `node_modules`, build output, virtualenvs, or full logs.
+- Update `.cursor/context/PROJECT_STATE.md` only when project status materially changes.
+- Full policy: `~/.cursor/governance/POLICY.md`.
+
+<!-- cursor-governance-managed:1.0.0 -->

@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "hooks": {
+    "beforeShellExecution": [
+      {
+        "command": "python .cursor/hooks/guard-shell.py",
+        "matcher": "git(\\.exe)?\\s+push|gh(\\.exe)?\\s+pr\\s+(create|merge)|makemigrations|alembic\\s+revision|prisma\\s+migrate|migrations\\s+add|migration:generate|migrate:make|RecordScreen|record-screen",
+        "timeout": 50
+      }
+    ]
+  }
+}

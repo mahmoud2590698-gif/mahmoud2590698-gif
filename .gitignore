@@ -1,0 +1,6 @@
+# BEGIN cursor-governance
+.cursor/governance-baseline.json
+.cursor/context/.fetch-stamp
+.cursor/context/pr-cache.tsv
+.cursor/context/protection-status.txt
+# END cursor-governance

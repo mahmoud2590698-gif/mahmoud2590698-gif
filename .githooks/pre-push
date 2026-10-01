@@ -1,0 +1,16 @@
+#!/bin/sh
+# cursor-governance-managed:1.0.0
+ROOT=$(git rev-parse --show-toplevel) || exit 1
+if [ -x /bin/bash ]; then
+  BASH_BIN=/bin/bash
+elif [ -x /usr/bin/bash ]; then
+  BASH_BIN=/usr/bin/bash
+elif [ -x "/c/Program Files/Git/bin/bash.exe" ]; then
+  BASH_BIN="/c/Program Files/Git/bin/bash.exe"
+else
+  echo "PREFLIGHT_BLOCK"
+  echo "reason=BASH_MISSING"
+  exit 1
+fi
+"$BASH_BIN" "$ROOT/scripts/guard-push.sh" || exit $?
+# --- original hook ---
